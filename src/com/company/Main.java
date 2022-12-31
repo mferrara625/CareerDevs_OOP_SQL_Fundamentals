@@ -72,7 +72,8 @@ public class Main {
                     "2. Polymorphism\n" +
                     "3. Classes\n" +
                     "4. Abstract Classes\n" +
-                    "5. Encapsulation");
+                    "5. Encapsulation\n" +
+                    "6. Exit Program");
             int selection = scan.nextInt();
             System.out.println("\n*\n");
             switch (selection) {
@@ -81,6 +82,7 @@ public class Main {
                 case 3 -> classDemo();
                 case 4 -> abstractionDemo();
                 case 5 -> encapsulationDemo();
+                case 6 -> System.exit(200);
             }
             System.out.println("\n*\n");
         }
