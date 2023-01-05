@@ -8,6 +8,7 @@ import com.company.Inheritance.Mouse1;
 import com.company.Inheritance.Mouse2;
 import com.company.Polymorphism.Bird;
 import com.company.Polymorphism.Robin;
+import com.company.SQL_Joins.SQL_Joins;
 
 import java.util.Scanner;
 
@@ -63,6 +64,16 @@ public class Main {
 
     }
 
+    public static void sqlJoinsDemo(){
+        System.out.println("SQL JOINS\n");
+        SQL_Joins s = new SQL_Joins();
+
+        s.innerJoin();
+        s.leftJoin();
+        s.rightJoin();
+        s.fullJoin();
+    }
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -73,7 +84,8 @@ public class Main {
                     "3. Classes\n" +
                     "4. Abstract Classes\n" +
                     "5. Encapsulation\n" +
-                    "6. Exit Program");
+                    "6. SQL Joins\n" +
+                    "7. Exit Program");
             int selection = scan.nextInt();
             System.out.println("\n*\n");
             switch (selection) {
@@ -82,7 +94,8 @@ public class Main {
                 case 3 -> classDemo();
                 case 4 -> abstractionDemo();
                 case 5 -> encapsulationDemo();
-                case 6 -> System.exit(200);
+                case 6 -> sqlJoinsDemo();
+                case 7 -> System.exit(200);
             }
             System.out.println("\n*\n");
         }
